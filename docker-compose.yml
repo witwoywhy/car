@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  pg:
+    container_name: pg
+    image: postgres:13-alpine3.14
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=integration
+    ports:
+      - 5432:5432
